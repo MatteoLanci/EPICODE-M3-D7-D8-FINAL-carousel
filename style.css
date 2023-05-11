@@ -78,6 +78,11 @@ body {
 }
 
 /*?----------------------------------- CAT. HEADER RIGHT SECTION (VIEW OPTION BTN) */
+@media only screen and (max-width: 440px) {
+  .category-header-left {
+    flex-direction: column;
+  }
+}
 .view-option .btn {
   border-radius: 0;
 }
