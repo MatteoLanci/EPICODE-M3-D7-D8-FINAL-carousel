@@ -87,3 +87,25 @@ carouselThreeItems.forEach((el) => {
     next = next.nextElementSibling;
   }
 });
+
+//! FUNZIONE PER ABILITARE UNA CLASSE BY TOGGLE CHE ANIMA IL TRIANGOLINO DEL BTN DROPDOWN MENU
+const dropdownButton = document.getElementById("dropdown-button");
+
+dropdownButton.addEventListener("click", () => {
+  dropdownButton.classList.toggle("rotate-toggle");
+});
+
+dropdownButton.addEventListener("hidden.bs.dropdown", () => {
+  dropdownButton.classList.remove("rotate-toggle");
+});
+
+//! FUNZIONE PER IL DROPDOWN BTN DELLA NAVBAR
+const navDropdownButton = document.getElementById("navUserBtn");
+
+navDropdownButton.addEventListener("click", () => {
+  navDropdownButton.classList.toggle("rotate-toggle");
+});
+
+navDropdownButton.addEventListener("hidden.bs.dropdown", () => {
+  navDropdownButton.classList.remove("rotate-toggle");
+});

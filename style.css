@@ -84,6 +84,15 @@ body {
     gap: 0.5rem !important;
   }
 }
+
+.dropdown-toggle::after {
+  transition: 0.3s ease-in-out;
+}
+/*!---------- ANIMAZIONE DEL TOGGLE DEI DROPDOWN BTN */
+.rotate-toggle::after {
+  transform: rotate(-180deg) !important;
+}
+
 .view-option .btn {
   border-radius: 0;
 }
